@@ -1,0 +1,7 @@
+method,train_accuracy,test_accuracy,macro_f1,train_test_gap,mia_auc_confidence,runtime_s,notes
+Centralized logistic regression baseline,0.9861,0.9833,0.9833,0.0027,0.5191,0.051,Non-private baseline trained with scikit-learn.
+"DP-SGD-style softmax, noise=0.0",0.977,0.9778,0.9778,-0.0007,0.5157,0.2291,Per-example clipping plus Gaussian noise; no formal epsilon accounting yet.
+"DP-SGD-style softmax, noise=0.5",0.9756,0.9722,0.9718,0.0034,0.5191,0.2309,Per-example clipping plus Gaussian noise; no formal epsilon accounting yet.
+"DP-SGD-style softmax, noise=1.0",0.9687,0.9667,0.9667,0.002,0.5188,0.2327,Per-example clipping plus Gaussian noise; no formal epsilon accounting yet.
+"DP-SGD-style softmax, noise=2.0",0.952,0.95,0.95,0.002,0.5119,0.2603,Per-example clipping plus Gaussian noise; no formal epsilon accounting yet.
+"Federated learning FedAvg, 5 IID clients",0.9715,0.9694,0.9693,0.002,0.5134,0.0882,FedAvg with 30 rounds and 2 local epochs per round.
