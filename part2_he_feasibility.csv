@@ -1,3 +1,0 @@
-track,status,avg_latency_ms,privacy_property,part2_interpretation
-Plaintext baseline inference,measured,0.031198333017528057,None; raw features are visible to the model owner.,Fast utility reference point.
-HE encrypted linear inference,planned or optional TenSEAL stretch,,Can hide client features during inference under an HE scheme.,Expected to be much slower; best framed as inference-only feasibility.

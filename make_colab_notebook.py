@@ -4,8 +4,8 @@ from pathlib import Path
 import nbformat as nbf
 
 
-SOURCE = Path("ppml_part2_colab_experiments.py")
-TARGET = Path("PPML_Part2_Colab_Experiments.ipynb")
+SOURCE = Path("ppml_part3_colab_experiments.py")
+TARGET = Path("PPML_Part3_Colab_Experiments.ipynb")
 
 
 def split_percent_script(source_text):

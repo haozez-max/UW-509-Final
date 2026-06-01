@@ -1,0 +1,8 @@
+method,train_accuracy,test_accuracy,macro_f1,train_test_gap,mia_auc_confidence,runtime_s,notes,epsilon
+Centralized logistic regression baseline,0.9861,0.9833,0.9833,0.0027,0.5191,0.3947,Non-private baseline trained with scikit-learn.,
+"DP-SGD-style softmax, noise=0.0",0.977,0.9778,0.9778,-0.0007,0.5157,0.859,Epsilon=inf at delta=0.0001 via SGM RDP bound.,
+"DP-SGD-style softmax, noise=0.5",0.9756,0.9722,0.9718,0.0034,0.5191,0.9001,Epsilon=23.70 at delta=0.0001 via SGM RDP bound.,23.6984
+"DP-SGD-style softmax, noise=1.0",0.9687,0.9667,0.9667,0.002,0.5188,0.8497,Epsilon=10.02 at delta=0.0001 via SGM RDP bound.,10.0243
+"DP-SGD-style softmax, noise=2.0",0.952,0.95,0.95,0.002,0.5119,0.8153,Epsilon=4.56 at delta=0.0001 via SGM RDP bound.,4.5559
+"Federated learning FedAvg, 5 IID clients",0.9715,0.9694,0.9693,0.002,0.5134,0.739,FedAvg with 30 rounds and 2 local epochs per round.,
+"Federated learning FedAvg, 5 non-IID clients",0.9339,0.9556,0.9554,-0.0217,0.5111,1.0106,Pathological non-IID: 2 digit classes per client.,
